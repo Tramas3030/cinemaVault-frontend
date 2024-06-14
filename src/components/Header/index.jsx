@@ -9,12 +9,13 @@ export function Header() {
       <Input placeholder="Pesquisar pelo título"/>
 
       <Profile>
-        <img src="https://github.com/Tramas3030.png" alt="Foto do usuário" />
-
         <div>
           <strong>Matheus Raphael</strong>
-          <button>sair</button>
+          <a href="#">sair</a>
         </div>
+        
+        <img src="https://github.com/Tramas3030.png" alt="Foto do usuário" />
+
       </Profile>
     </Container>
   )

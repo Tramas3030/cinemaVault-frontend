@@ -17,12 +17,18 @@ export const Container = styled.header`
   gap: 64px;
 
   padding: 0 80px;
+
+  > h1 {
+    color: ${({ theme }) => theme.COLORS.PINK};
+  }
 `;
 
 export const Profile = styled.div`
   display: flex;
   align-items: center;
-
+  
+  gap: 14px;
+  
   > img {
     width: 56px;
     height: 56px;
@@ -32,5 +38,19 @@ export const Profile = styled.div`
   > div {
     display: flex;
     flex-direction: column;
+
+    strong {
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    a {
+      font-size: 14px;
+
+      text-align: end;
+      text-decoration: none;
+      
+      color: ${({ theme }) => theme.COLORS.GREY};
+    }
   }
 `;
