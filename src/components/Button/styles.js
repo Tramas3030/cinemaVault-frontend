@@ -4,8 +4,8 @@ export const Container = styled.button`
   width: 100%;
   height: 56px;
 
-  background-color: ${({ theme }) => theme.COLORS.PINK};
-  color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+  background-color: ${({ theme, highlight }) => highlight ? theme.COLORS.BLACK : theme.COLORS.PINK};
+  color: ${({ theme, highlight }) => highlight ? theme.COLORS.PINK : theme.COLORS.BLACK};
 
   border: none;
   padding: 0;
@@ -16,5 +16,9 @@ export const Container = styled.button`
 
   &:disabled {
     opacity: 0.5;
+  }
+
+  &:hover {
+    filter: saturate(2.0);
   }
 `;

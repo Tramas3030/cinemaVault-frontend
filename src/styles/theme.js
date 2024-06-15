@@ -5,9 +5,11 @@ export default {
     BACKGROUND_700: "#3E3B47",
 
     GREY_TAG_TEXT: "#E5E5E5",
+    GREY_H2: "#999591",
     GREY: "#948F99",
     WHITE: "#F4EDE8",
     PINK: "#FF859B",
+    BLACK: "#0D0C0F",
 
     BORDER_GREY: "#473B3B"
   }

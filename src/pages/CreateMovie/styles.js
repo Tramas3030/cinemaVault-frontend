@@ -14,16 +14,6 @@ export const Container = styled.div`
     grid-area: content;
     overflow-y: auto;
     padding: 50px 80px;
-
-    &::-webkit-scrollbar {
-      width: 12px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background: ${({ theme }) => theme.COLORS.PINK};
-      border-radius: 6px;
-    }
-
   }
 `;
 
@@ -37,6 +27,27 @@ export const Content = styled.div`
 
   > .title-and-rating {
     display: flex;
+    gap: 40px;
+  }
+
+  > Section .markers-note-item {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 16px;
+    flex-wrap: wrap;
+    
+    padding: 16px;
+    width: 100%;
+    height: auto;
+
+    border-radius: 8px;
+    background-color: ${({ theme }) => theme.COLORS.BLACK};
+  }
+
+  > footer {
+    display: flex;
+    width: 100%;
     gap: 40px;
   }
 `;

@@ -2,10 +2,12 @@ import { FiArrowLeft } from "react-icons/fi";
 
 import { Container, Content } from "./styles";
 import { Header } from "../../components/Header";
-// import { Button } from "../../components/Button";
+import { Button } from "../../components/Button";
 import { ButtonText } from "../../components/ButtonText";
 import { Input } from "../../components/Input";
 import { Textarea } from "../../components/Textarea";
+import { Section } from "../../components/Section";
+import { NoteItem } from "../../components/NoteItem";
 
 export function CreateMovie() {
   return(
@@ -23,6 +25,18 @@ export function CreateMovie() {
           </div>
 
           <Textarea placeholder="Observações" />
+
+          <Section title="Marcadores">
+            <div className="markers-note-item">
+              <NoteItem value="React" />
+              <NoteItem isNew placeholder="Novo marcador" />
+            </div>
+          </Section>
+
+          <footer>
+            <Button highlight title="Excluir filme" />
+            <Button title="Salvar alterações"/>
+          </footer>
         </Content>
       </main>
     </Container>

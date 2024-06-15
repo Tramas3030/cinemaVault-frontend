@@ -32,4 +32,18 @@ export default createGlobalStyle`
   button:hover, a:hover {
     filter: brightness(0.9);
   }
+
+  main {
+    scrollbar-width: auto; /* Pode ser 'auto', 'thin', ou 'none' */
+    scrollbar-color: ${({ theme }) => theme.COLORS.PINK} ${({ theme }) => theme.COLORS.BACKGROUND_900}; /* thumb color track color */
+
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: ${({ theme }) => theme.COLORS.PINK};
+      border-radius: 6px;
+    }
+  }
 `;
