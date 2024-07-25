@@ -24,12 +24,12 @@ export default createGlobalStyle`
     text-decoration: none;
   }
 
-  button, a {
+  a {
     cursor: pointer;
     transition: filter 0.2s;
   }
 
-  button:hover, a:hover {
+  a:hover {
     filter: brightness(0.9);
   }
 
