@@ -21,6 +21,7 @@ export const Content = styled.div`
   width: 100%;
 
   display: flex;
+  flex-direction: column;
 
   > .content-header {
     display: flex;
@@ -31,11 +32,14 @@ export const Content = styled.div`
       display: flex;
 
       align-items: center;
-      
     }
 
     > .movieName-and-rating h1 {
       margin-right: 20px;
     }
+  }
+
+  > .tags {
+    margin: 40px 0;
   }
 `;

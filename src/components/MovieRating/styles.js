@@ -17,8 +17,8 @@ export const Star = styled.button`
 
   > svg {
     color: ${({ theme }) => theme.COLORS.PINK};
-    height: ${({ isLarge }) => isLarge ? "20px" : "12px"};
-    fill: ${({ theme, active }) => active ? theme.COLORS.PINK : 'transparent'};
+    height: ${({ $islarge }) => $islarge ? "20px" : "12px"};
+    fill: ${({ theme, $active }) => $active ? theme.COLORS.PINK : 'transparent'};
 
     transition: transform 0.2s ease;
   }

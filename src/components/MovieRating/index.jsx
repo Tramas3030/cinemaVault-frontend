@@ -4,7 +4,7 @@ import { FiStar } from "react-icons/fi";
 
 import { Container, Star } from "./styles";
 
-export function MovieRating({ isLarge = false, editable = false }) {
+export function MovieRating({ islarge = false, editable = false }) {
   const rating = 3;
 
   return(
@@ -12,8 +12,8 @@ export function MovieRating({ isLarge = false, editable = false }) {
       {Array.from({length: 5}, (_, index) => (
         <Star 
           key={index} 
-          active={index < rating} 
-          isLarge={isLarge}
+          $active={(index < rating).toString()} 
+          $islarge={islarge.toString()}
           disabled={editable}  
         >
           <FiStar size={20}/>
@@ -24,6 +24,6 @@ export function MovieRating({ isLarge = false, editable = false }) {
 }
 
 MovieRating.propTypes = {
-  isLarge: PropTypes.bool,
+  islarge: PropTypes.bool,
   editable: PropTypes.bool,
 }
