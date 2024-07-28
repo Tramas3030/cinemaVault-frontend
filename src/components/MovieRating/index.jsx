@@ -14,7 +14,7 @@ export function MovieRating({ islarge = false, editable = false }) {
           key={index} 
           $active={(index < rating).toString()} 
           $islarge={islarge.toString()}
-          disabled={editable}  
+          $disabled={editable.toString()}  
         >
           <FiStar size={20}/>
         </Star>

@@ -13,17 +13,17 @@ export const Star = styled.button`
   border: none;
   background: none;
 
-  cursor: ${({ disabled }) => disabled ? "pointer" : "default"};
+  cursor: ${({ $disabled }) => $disabled != "false" ? "pointer" : "default"};
 
   > svg {
     color: ${({ theme }) => theme.COLORS.PINK};
-    height: ${({ $islarge }) => $islarge ? "20px" : "12px"};
-    fill: ${({ theme, $active }) => $active ? theme.COLORS.PINK : 'transparent'};
+    height: ${({ $islarge }) => $islarge != "false" ? "20px" : "12px"};
+    fill: ${({ theme, $active }) => $active != "false" ? theme.COLORS.PINK : 'transparent'};
 
     transition: transform 0.2s ease;
   }
 
   > svg:hover {
-    transform: ${({ disabled }) => disabled ? "scale(1.2)" : "none"};
+    transform: ${({ $disabled }) => $disabled != "false" ? "scale(1.2)" : "none"};
   }
 `;

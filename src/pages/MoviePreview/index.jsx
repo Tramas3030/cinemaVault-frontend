@@ -38,9 +38,9 @@ export function MoviePreview() {
           </div>
 
           <div className="tags">
-            <Tag title="Ficção Científica" />
-            <Tag title="Drama" />
-            <Tag title="Família" />
+            <Tag title="Ficção Científica"/>
+            <Tag title="Drama"/>
+            <Tag title="Família"/>
           </div>
         </Content>
       </main>
