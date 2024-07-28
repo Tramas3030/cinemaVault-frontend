@@ -42,4 +42,8 @@ export const Content = styled.div`
   > .tags {
     margin: 40px 0;
   }
+
+  > p {
+    text-align: justify;
+  }
 `;

@@ -12,4 +12,10 @@ export const Container = styled.button`
 
   text-align: center;
   align-items: center;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
 `;
