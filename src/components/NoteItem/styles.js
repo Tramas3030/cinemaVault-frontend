@@ -32,6 +32,8 @@ export const Container = styled.div`
     border: none;
     background: none;
 
+    cursor: pointer;
+
     color: ${({ theme }) => theme.COLORS.PINK};
 
     transition: transform 0.2s ease;

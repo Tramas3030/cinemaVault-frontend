@@ -2,14 +2,6 @@ import { FiArrowLeft } from "react-icons/fi";
 
 import { Container, Content } from "./styles";
 
-// import { 
-//   Header,
-//   ButtonText,
-//   MovieName,
-//   MovieRating,
-//   MovieRegisterDate,
-// } from "components";
-
 import { Header } from "../../components/Header";
 import { ButtonText } from "../../components/ButtonText";
 import { MovieName } from "../../components/MovieName";
