@@ -7,7 +7,7 @@ import { ButtonText } from "../../components/ButtonText";
 import { Input } from "../../components/Input";
 import { Textarea } from "../../components/Textarea";
 import { Section } from "../../components/Section";
-import { NoteItem } from "../../components/NoteItem";
+import { Markers } from "../../components/Markers";
 
 export function CreateMovie() {
   return(
@@ -28,8 +28,8 @@ export function CreateMovie() {
 
           <Section title="Marcadores">
             <div className="markers-note-item">
-              <NoteItem value="React" />
-              <NoteItem isNew placeholder="Novo marcador" />
+              <Markers value="React" />
+              <Markers isNew placeholder="Novo marcador" />
             </div>
           </Section>
 
