@@ -2,15 +2,15 @@ import PropTypes  from "prop-types";
 
 import { Container } from "./styles";
 
-export function MovieName({ title, islarge = false }) {
+export function MovieName({ movieTitle, islarge = false }) {
   return(
     <Container $islarge={islarge.toString()}>
-      {title}
+      {movieTitle}
     </Container>
-  )
+  )       
 }
 
 MovieName.propTypes = {
-  title: PropTypes.string.isRequired,
+  movieTitle: PropTypes.string.isRequired,
   islarge: PropTypes.bool,
 }

@@ -2,15 +2,15 @@ import PropTypes  from "prop-types";
 
 import { Container } from "./styles";
 
-export function Tag({ title, home = false }) {
+export function Tag({ tagText, home = false }) {
   return(
     <Container $home={home.toString()}>
-      {title}
+      {tagText}
     </Container>
   )
 }
 
 Tag.propTypes = {
-  title: PropTypes.string.isRequired,
+  tagText: PropTypes.string.isRequired,
   home: PropTypes.bool
 }

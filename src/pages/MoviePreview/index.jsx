@@ -19,7 +19,7 @@ export function MoviePreview() {
           <div className="content-header">
             <ButtonText title="Voltar" icon={FiArrowLeft}/>
             <div className="movieName-and-rating">
-              <MovieName title="Interestellar" islarge/>
+              <MovieName movieTitle="Interestellar" islarge/>
               <MovieRating islarge editable/>
             </div>
             <MovieRegisterDate data={{
@@ -30,9 +30,9 @@ export function MoviePreview() {
           </div>
 
           <div className="tags">
-            <Tag title="Ficção Científica"/>
-            <Tag title="Drama"/>
-            <Tag title="Família"/>
+            <Tag tagText="Ficção Científica"/>
+            <Tag tagText="Drama"/>
+            <Tag tagText="Família"/>
           </div>
 
           <p>
