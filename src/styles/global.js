@@ -33,8 +33,8 @@ export default createGlobalStyle`
     filter: brightness(0.9);
   }
 
-  main {
-    scrollbar-width: auto; /* Pode ser 'auto', 'thin', ou 'none' */
+  main, .movies {
+    scrollbar-width: auto;
     scrollbar-color: ${({ theme }) => theme.COLORS.PINK} ${({ theme }) => theme.COLORS.BACKGROUND_900}; /* thumb color track color */
 
     &::-webkit-scrollbar {

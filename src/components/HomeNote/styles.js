@@ -8,6 +8,9 @@ export const Container = styled.div`
   flex-direction: column;
   gap: 15px;
 
+  padding: 32px;
+  border-radius: 16px;
+
   background-color: ${({ theme }) => theme.COLORS.BROWN};
 
   > .header {
@@ -18,6 +21,8 @@ export const Container = styled.div`
 
   > p {
     font-size: 16px;
-    color: ${({ theme }) => theme.COLORS.GREY_H2}
+    color: ${({ theme }) => theme.COLORS.GREY_H2};
+
+    height: 52px;
   }
 `;

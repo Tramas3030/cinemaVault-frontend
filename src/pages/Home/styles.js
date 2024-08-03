@@ -12,16 +12,18 @@ export const Container = styled.div`
 
   > main {
     grid-area: content;
-    /* overflow-y: auto; */
     padding: 50px 80px;
+    overflow-y: auto;
   }
 `;
 
 export const Content = styled.div`
   width: 100%;
+  height: 100%;
 
   display: flex;
   flex-direction: column;
+  gap: 38px;
 
   > .home-header {
     display: flex;
@@ -38,5 +40,12 @@ export const Content = styled.div`
     color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
     background-color: ${({ theme }) => theme.COLORS.PINK};
     border-radius: 8px;
+  }
+
+  > .movies {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    overflow-y: auto;
   }
 `;

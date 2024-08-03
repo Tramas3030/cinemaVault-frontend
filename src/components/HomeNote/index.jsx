@@ -4,9 +4,10 @@ import { Container } from "./styles";
 
 import { MovieRating } from "../MovieRating";
 import { MovieName } from "../MovieName";
+import { MovieText } from "../MovieText";
 import { Tag } from "../Tag";
 
-export function HomeNote({ movieTitle, textPreview }) {
+export function HomeNote({ movieTitle, text }) {
   return(
     <Container>
       <div className="header">
@@ -15,14 +16,12 @@ export function HomeNote({ movieTitle, textPreview }) {
         <MovieRating />
       </div>
 
-      <p>
-        {textPreview}
-      </p>
+      <MovieText text={text} textpreview/>
 
       <div className="tags">
-        <Tag tagText="Ficção Científica"/>
-        <Tag tagText="Drama"/>
-        <Tag tagText="Família"/>
+        <Tag home tagText="Ficção Científica"/>
+        <Tag home tagText="Drama"/>
+        <Tag home tagText="Família"/>
       </div>
     </Container>
   )
@@ -30,5 +29,5 @@ export function HomeNote({ movieTitle, textPreview }) {
 
 HomeNote.propTypes = {
   movieTitle: PropTypes.string.isRequired,
-  textPreview: PropTypes.string,
+  text: PropTypes.string,
 }
