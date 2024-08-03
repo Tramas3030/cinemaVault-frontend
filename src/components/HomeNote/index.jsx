@@ -7,13 +7,13 @@ import { MovieName } from "../MovieName";
 import { MovieText } from "../MovieText";
 import { Tag } from "../Tag";
 
-export function HomeNote({ movieTitle, text }) {
+export function HomeNote({ movieTitle, text, rating }) {
   return(
     <Container>
       <div className="header">
         <MovieName movieTitle={movieTitle} />
         
-        <MovieRating />
+        <MovieRating rating={rating}/>
       </div>
 
       <MovieText text={text} textpreview/>
@@ -30,4 +30,5 @@ export function HomeNote({ movieTitle, text }) {
 HomeNote.propTypes = {
   movieTitle: PropTypes.string.isRequired,
   text: PropTypes.string,
+  rating: PropTypes.number,
 }
