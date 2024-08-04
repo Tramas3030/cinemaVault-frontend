@@ -7,7 +7,7 @@ import { MovieName } from "../MovieName";
 import { MovieText } from "../MovieText";
 import { Tag } from "../Tag";
 
-export function HomeNote({ movieTitle, text, rating }) {
+export function HomeNote({ movieTitle, text, rating, datatags }) {
   return(
     <Container>
       <div className="header">
@@ -18,11 +18,15 @@ export function HomeNote({ movieTitle, text, rating }) {
 
       <MovieText text={text} textpreview/>
 
-      <div className="tags">
-        <Tag home tagText="Ficção Científica"/>
-        <Tag home tagText="Drama"/>
-        <Tag home tagText="Família"/>
-      </div>
+      {
+        datatags && 
+        <div className="tags">
+          {
+            datatags.tags.map(tag => <Tag tagText={tag.text} key={tag.id} home/>)
+          }
+        </div>
+      }
+
     </Container>
   )
 }
@@ -31,4 +35,10 @@ HomeNote.propTypes = {
   movieTitle: PropTypes.string.isRequired,
   text: PropTypes.string,
   rating: PropTypes.number,
+  datatags: PropTypes.shape({
+    tags: PropTypes.arrayOf(PropTypes.shape({
+      id: PropTypes.string,
+      text: PropTypes.string
+    }))
+  }),
 }
