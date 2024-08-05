@@ -7,6 +7,7 @@ export default {
 
     GREY_TAG_TEXT: "#E5E5E5",
     GREY_H2: "#999591",
+    GREY_P: "#CAC4CF",
     GREY: "#948F99",
     WHITE: "#F4EDE8",
     PINK: "#FF859B",

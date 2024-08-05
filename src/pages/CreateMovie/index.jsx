@@ -20,8 +20,8 @@ export function CreateMovie() {
           <h1>Novo Filme</h1>
 
           <div className="title-and-rating">
-            <Input placeholder="Título" />
-            <Input placeholder="Sua nota (de 0 a 5)" />
+            <Input placeholder="Título" type="text"/>
+            <Input placeholder="Sua nota (de 0 a 5)" type="text"/>
           </div>
 
           <Textarea placeholder="Observações" />
