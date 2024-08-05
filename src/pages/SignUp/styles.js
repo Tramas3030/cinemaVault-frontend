@@ -48,6 +48,10 @@ export const Form = styled.form`
   > Button {
     margin: 24px 0 42px;
   }
+
+  > a {
+    color: ${({ theme }) => theme.COLORS.PINK};
+  }
 `;
 
 export const Background = styled.div`
