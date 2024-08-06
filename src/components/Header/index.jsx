@@ -1,14 +1,16 @@
+import { Link } from "react-router-dom";
+
 import { Container, Profile } from "./styles";
 import { Input } from "../Input";
 
 export function Header() {
   return(
     <Container>
-      <h1>CinemaVault</h1>
+      <Link to="/">CinemaVault</Link>
       
       <Input placeholder="Pesquisar pelo título" type="text"/>
 
-      <Profile>
+      <Profile to="/profile">
         <div>
           <strong>Matheus Raphael</strong>
           <a href="#">sair</a>

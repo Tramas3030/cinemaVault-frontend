@@ -16,7 +16,7 @@ export function CreateMovie() {
 
       <main>
         <Content>
-          <ButtonText title="Voltar" icon={FiArrowLeft}/>
+          <ButtonText title="Voltar" icon={FiArrowLeft} to="/"/>
           <h1>Novo Filme</h1>
 
           <div className="title-and-rating">

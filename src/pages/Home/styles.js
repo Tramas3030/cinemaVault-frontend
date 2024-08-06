@@ -35,13 +35,6 @@ export const Content = styled.div`
     color: ${({ theme }) => theme.COLORS.WHITE};
   }
 
-  > .home-header button {
-    padding: 16px 32px;
-    color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
-    background-color: ${({ theme }) => theme.COLORS.PINK};
-    border-radius: 8px;
-  }
-
   > .movies {
     display: flex;
     flex-direction: column;
